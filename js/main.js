@@ -3,11 +3,11 @@ onload = () => {
   const c = setTimeout(() => {
     document.body.classList.remove("not-loaded");
 
-    // Tambahkan styling untuk teks title
+    // Tambahkan styling agar teks rata kanan-kiri (justified)
     const style = document.createElement("style");
     style.innerHTML = `
       #title {
-        text-align: center;
+        text-align: justify;
         white-space: pre-wrap;
         font-family: 'Courier New', monospace;
         padding: 20px;
@@ -26,7 +26,7 @@ onload = () => {
       if (index < titles.length) {
         titleElement.innerHTML += titles[index];
         index++;
-        setTimeout(appendTitle, 100);
+        setTimeout(appendTitle, 50);
       }
     }
 
