@@ -30,23 +30,6 @@
     </a>
   </div>
 
-  <!-- Audio Player -->
-  <audio id="bg-music" src="lagu/music.mp3"></audio>
-
-  <!-- Play audio on button click -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const btn = document.getElementById("openBtn");
-      const audio = document.getElementById("bg-music");
-
-      btn.addEventListener("click", () => {
-        audio.play().catch(err => {
-          console.warn("Audio gagal diputar otomatis:", err);
-        });
-      });
-    });
-  </script>
-
   <script src="js/index.js"></script>
 </body>
 
