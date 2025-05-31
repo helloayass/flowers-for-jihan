@@ -314,11 +314,26 @@
     </div>
   </div>
 
-  <!-- Title -->
+<!-- Title -->
   <h1 class="title"><span id="title"></span></h1>
+
+  <!-- Audio player (disembunyikan) -->
+  <audio id="audio" src="lagu/music.mp3" loop></audio>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Fungsi untuk play musik otomatis saat halaman selesai load
+    function playMusic() {
+      const audio = document.getElementById('audio');
+      if (audio) {
+        audio.play().catch((e) => {
+          console.warn('Autoplay gagal:', e);
+        });
+      }
+    }
+    window.addEventListener('load', playMusic);
+  </script>
 </body>
 
 </html>
-
-<!-- Import Javascript -->
-<script src="js/main.js"></script>
