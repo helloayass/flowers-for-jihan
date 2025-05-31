@@ -20,6 +20,12 @@ html, body {
   touch-action: none;
 }
 /* ========================================= */
+#title {
+  text-align: justify;
+  max-width: 90%; /* Supaya lebar teks tidak terlalu mepet pinggir */
+  margin: 0 auto; /* Tengah secara horizontal */
+  white-space: pre-wrap; /* Agar teks dengan newline (\n) tetap tampil sebagai baris baru */
+}
 
 .title {
   position: absolute;
