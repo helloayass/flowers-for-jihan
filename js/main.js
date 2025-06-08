@@ -17,7 +17,7 @@ onload = () => {
     `;
     document.head.appendChild(style);
 
-    const titles = ('Happy Birthday, Jihan 💖\nOn this special day, I just want you to know how much you mean to me. Youre not just someone who came into my life, youre the reason behind my smile every single day. May all the beautiful things in life always find their way to you, because you truly deserve the best. Im grateful to have met you, and I hope in the years to come, I can keep celebrating moments like this. Happy birthday, Jihan. Keep shining, like a star that never fades in my night sky.').split('');
+    const titles = ('Happy Birthday, Jihan 💫/nOn this special day, I just want to say thank you not just for the moments, but for the meaning you once gave to my days.I hope life keeps bringing you beautiful things. You deserve that. Im truly grateful for ever knowing you, and this little message just a quiet gift, a final one. Keep shining, like a star that once lit up my night sky. Happy Birthday. Always.').split('');
     
     const titleElement = document.getElementById('title');
     let index = 0;
